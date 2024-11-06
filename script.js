@@ -16,7 +16,6 @@ function Book(title, author, pages, read) {
 function addBookToLibrary(title, author, pages, read) {
     let book = new Book(title, author, pages, read);
     myLibrary.push(book);
-    // console.log(myLibrary);
     displayLibrary(myLibrary);
 }
 

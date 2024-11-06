@@ -1,3 +1,13 @@
+body {
+    background-color: #E0E8F7;
+    margin: 0px;
+    
+}
+h1 {
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
 .library {
     margin-left: auto;
     margin-right: auto;
@@ -15,4 +25,15 @@ th {
 td {
     padding: 16px;
     border: 1px solid #D4DCF7;
+}
+
+#newbookbutton {
+    margin-top: 24px;
+    margin-left: 24px;
+    border-radius: 24px;
+    border: none;
+    padding: 16px;
+    background-color: #F4F7FC;
+    border: 1px solid #D4DCF7;
+    align-items: center;
 }
