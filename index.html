@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>My Library</h1>
-    
+
     <table class="library">
         <tr>
             <th>Title</th>
@@ -18,6 +18,26 @@
         </tr>
     </table>
 
+    <button onclick="showDialog()">Add New Book</button>
+
+    <dialog id="addBookDialog">
+        <form action="" method="dialog">
+            <label for="title">Book Title:</label>
+            <input type="text" name="title" id="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author" required>
+
+            <label for="pgnums">Total Pages:</label>
+            <input type="number" name="pages" id="pages" required>
+
+            <label for="read">Read?</label>
+            <input type="checkbox" value="true" name="read" id="read">
+
+            <button class="submit" type="submit">Add Book</button>
+            <button id="cancelAdd" onclick="" formnovalidate>Cancel</button>
+        </form>
+    </dialog>
 
 </body>
 <script src="script.js"></script>
