@@ -1,7 +1,7 @@
 body {
     background-color: #E0E8F7;
     margin: 0px;
-    
+
 }
 h1 {
     margin-left: 24px;
@@ -36,4 +36,19 @@ td {
     background-color: #F4F7FC;
     border: 1px solid #D4DCF7;
     align-items: center;
+    cursor: pointer;
+}
+
+.deletebutton {
+    border-radius: 5px;
+    border: 1px solid #D4DCF7;
+    background-color: #F4F7FC;
+    padding: 8px;
+    width: 75px;
+    cursor: pointer;
+}
+
+#cancelAdd,
+.submit {
+    cursor: pointer;
 }

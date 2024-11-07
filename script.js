@@ -39,6 +39,7 @@ function displayLibrary(library) {
             newRow.insertCell(1).innerHTML = library[i].author;
             newRow.insertCell(2).innerHTML = library[i].pages;
             newRow.insertCell(3).innerHTML = library[i].read;
+            newRow.insertCell(4).innerHTML = '<button class="deletebutton" onclick="deleteBook(this)">Delete</button>';
         }
     }
 
@@ -52,6 +53,11 @@ function displayLibrary(library) {
             cells[i].style.textAlign = "right";
         }
     }
+}
+
+function deleteBook(self) {
+    const row = self.parentNode.parentNode;
+    row.parentNode.removeChild(row);
 }
 
 // Dialog to add new book
