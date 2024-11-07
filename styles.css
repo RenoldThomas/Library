@@ -24,7 +24,14 @@ th {
 
 td {
     padding: 16px;
+    width: 150px;
     border: 1px solid #D4DCF7;
+    word-wrap: break-word;
+    overflow-wrap: break-word
+}
+
+.pages-column {
+    text-align:right;
 }
 
 #newbookbutton {
@@ -39,13 +46,19 @@ td {
     cursor: pointer;
 }
 
-.deletebutton {
+.tablebutton {
     border-radius: 5px;
     border: 1px solid #D4DCF7;
     background-color: #F4F7FC;
     padding: 8px;
     width: 75px;
     cursor: pointer;
+}
+
+.readbutton {
+    /* margin-left: 16px; */
+    margin-top: 8px;
+    width: 125px;
 }
 
 #cancelAdd,

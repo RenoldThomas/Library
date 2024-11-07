@@ -5,12 +5,14 @@ function Book(title, author, pages, read) {
     this.author = author;
     this.pages = pages;
 
-    if (read) {
-        this.read = "has read";
-    }
-    else {
-        this.read = "hasn't read yet";
-    }
+    this.read = read
+        ? "has read" : "hasn't read yet";
+    // if (read) {
+    //     this.read = "has read";
+    // }
+    // else {
+    //     this.read = "hasn't read yet";
+    // }
 }
 
 function addBookToLibrary(title, author, pages, read) {
@@ -37,22 +39,34 @@ function displayLibrary(library) {
             let newRow = table.insertRow(-1);
             newRow.insertCell(0).innerHTML = library[i].title;
             newRow.insertCell(1).innerHTML = library[i].author;
-            newRow.insertCell(2).innerHTML = library[i].pages;
-            newRow.insertCell(3).innerHTML = library[i].read;
-            newRow.insertCell(4).innerHTML = '<button class="deletebutton" onclick="deleteBook(this)">Delete</button>';
+
+            let pagesCell = newRow.insertCell(2);
+            pagesCell.innerHTML = library[i].pages;
+            pagesCell.classList.add("pages-column");
+
+            let readCell = newRow.insertCell(3);
+            readCell.innerHTML = library[i].read;
+
+            let button = document.createElement("button");
+            button.classList.add("tablebutton", "readbutton");
+            button.textContent = "Change Status";
+            button.addEventListener("click", function () {
+                toggleReadStatus(library[i]); // Pass book object
+            });
+            readCell.appendChild(button);
+
+            newRow.insertCell(4).innerHTML = '<button class="tablebutton" onclick="deleteBook(this)">Delete</button>';
         }
     }
+}
 
-    // Select all the cells in the table
-    const cells = table.querySelectorAll('td');
-
-    // Iterate over the cells and right-align the third column
-    for (let i = 0; i < cells.length; i++) {
-        // Target every fourth cell starting from the third one (index 2)
-        if (i % 4 === 2) {
-            cells[i].style.textAlign = "right";
-        }
+function toggleReadStatus(book) {
+    if (book.read === "has read") {
+        book.read = "hasn't read yet";
+    } else {
+        book.read = "has read";
     }
+    displayLibrary(myLibrary); // Update table with new read status
 }
 
 function deleteBook(self) {
