@@ -1,7 +1,7 @@
 body {
-    background-color: #E0E8F7;
+    background-color: #2F3A5B;
     margin: 0px;
-
+    color: #EFD685;
 }
 h1 {
     margin-left: 24px;
@@ -11,13 +11,13 @@ h1 {
 .library {
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #D4DCF7;
+    border: 1px solid #EFD685;
     border-collapse: collapse;
-    background-color:#F4F7FC;
+    background-color:#38456C;
 }
 
 th {
-    border: 1px solid #D4DCF7;
+    border: 1px solid #EFD685;
     padding: 12px 16px;
     text-align: left;
 }
@@ -25,7 +25,7 @@ th {
 td {
     padding: 16px;
     width: 150px;
-    border: 1px solid #D4DCF7;
+    border: 1px solid #EFD685;
     word-wrap: break-word;
     overflow-wrap: break-word
 }
@@ -34,22 +34,28 @@ td {
     text-align:right;
 }
 
+#newbookbutton,
+.tablebutton,
+.readbutton {
+    color: #EFD685;
+}
+
 #newbookbutton {
     margin-top: 24px;
     margin-left: 24px;
     border-radius: 24px;
     border: none;
     padding: 16px;
-    background-color: #F4F7FC;
-    border: 1px solid #D4DCF7;
+    background-color: #38456C;
+    border: 1px solid #EFD685;
     align-items: center;
     cursor: pointer;
 }
 
 .tablebutton {
     border-radius: 5px;
-    border: 1px solid #D4DCF7;
-    background-color: #F4F7FC;
+    border: 1px solid #EFD685;
+    background-color: #38456C;
     padding: 8px;
     width: 75px;
     cursor: pointer;
