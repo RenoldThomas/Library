@@ -55,10 +55,10 @@ function displayLibrary(library) {
 }
 
 function toggleReadStatus(book) {
-    if (book.read === "has read") {
-        book.read = "hasn't read yet";
+    if (book.read === "Read") {
+        book.read = "Not read";
     } else {
-        book.read = "has read";
+        book.read = "Read";
     }
     displayLibrary(myLibrary); // Update table with new read status
 }
