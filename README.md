@@ -24,7 +24,7 @@ This web application creates a personal book library management system that enab
 ## Installation Instructions
 1. Clone this repository to your local machine
 2. Open index.html in any modern web browser
-3. Alternatively, access the deployed version at https://therealstealthwar.github.io/Library
+3. Alternatively, access the deployed version at https://renoldthomas.github.io/Library
 
 ## Future Enhancements
 - Local storage implementation for data persistence between sessions
