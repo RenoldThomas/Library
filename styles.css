@@ -1,72 +1,87 @@
+/* Main document styling */
 body {
-    background-color: #2F3A5B;
-    margin: 0px;
-    color: #EFD685;
+    background-color: #2F3A5B; /* Dark blue background */
+    margin: 0px;               /* Remove default margin */
+    color: #EFD685;            /* Gold/yellow text color for contrast */
 }
+
+/* Main heading styling */
 h1 {
     margin-left: 24px;
     margin-top: 24px;
 }
 
+/* Library table styling */
 .library {
-    margin-left: auto;
+    margin-left: auto;        /* Center table horizontally */
     margin-right: auto;
-    border: 1px solid #EFD685;
-    border-collapse: collapse;
-    background-color:#38456C;
+    border: 1px solid #EFD685; /* Gold border */
+    border-collapse: collapse; /* Remove gaps between cells */
+    background-color: #38456C; /* Slightly lighter blue for table */
 }
 
+/* Table header cells */
 th {
     border: 1px solid #EFD685;
     padding: 12px 16px;
     text-align: left;
 }
 
+/* Table data cells */
 td {
     padding: 16px;
-    width: 150px;
+    width: 150px;            /* Set consistent column width */
     border: 1px solid #EFD685;
-    word-wrap: break-word;
-    overflow-wrap: break-word
+    word-wrap: break-word;   /* Allow text to wrap within cells */
+    overflow-wrap: break-word /* Handle long text overflow */
 }
 
+/* Right-align numbers in pages column */
 .pages-column {
-    text-align:right;
+    text-align: right;
 }
 
+/* Consistent text color for all buttons */
 #newbookbutton,
 .tablebutton,
 .readbutton {
-    color: #EFD685;
+    color: #EFD685; /* Gold text color to match theme */
 }
 
+/* "Add New Book" button styling */
 #newbookbutton {
     margin-top: 24px;
     margin-left: 24px;
-    border-radius: 24px;
+    border-radius: 24px;      /* Rounded corners */
     border: none;
     padding: 16px;
-    background-color: #38456C;
-    border: 1px solid #EFD685;
+    background-color: #38456C; /* Same as table background */
+    border: 1px solid #EFD685; /* Gold border */
     align-items: center;
-    cursor: pointer;
+    cursor: pointer;           /* Hand cursor on hover */
 }
 
+/* Styling for buttons inside the table */
 .tablebutton {
-    border-radius: 5px;
-    border: 1px solid #EFD685;
-    background-color: #38456C;
+    border-radius: 5px;        /* Slightly rounded corners */
+    border: 1px solid #EFD685; /* Gold border */
+    background-color: #38456C; /* Match table background */
     padding: 8px;
     width: 75px;
     cursor: pointer;
 }
 
+/* Additional width for "Change Status" button */
 .readbutton {
     margin-top: 8px;
-    width: 125px;
+    width: 125px; /* Wider to fit text */
 }
 
+/* Form buttons cursor styling */
 #cancelAdd,
 .submit {
     cursor: pointer;
 }
+
+/* TODO: Add styling for dialog element and form fields */
+/* TODO: Add media queries for responsive design on small screens */

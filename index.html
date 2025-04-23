@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures proper rendering on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="styles.css">
     <title>Library</title>
 </head>
 <body>
+    <!-- Main heading for the application -->
     <h1>My Library</h1>
 
+    <!-- Table for displaying the book library -->
     <table class="library">
+        <!-- Table header row with column titles -->
         <tr>
             <th>Title</th>
             <th>Author</th>
@@ -17,29 +22,40 @@
             <th>Read?</th>
             <th>Action</th>
         </tr>
+        <!-- Book entries will be dynamically inserted here by JavaScript -->
     </table>
 
+    <!-- Button to trigger the add book dialog -->
     <button id="newbookbutton" onclick="showDialog()">Add New Book</button>
 
+    <!-- Dialog element for adding new books (hidden by default) -->
     <dialog id="addBookDialog">
+        <!-- Form for collecting book information -->
         <form action="" method="dialog">
+            <!-- Book title input field -->
             <label for="title">Book Title:</label>
             <input type="text" name="title" id="title" required>
 
+            <!-- Author input field -->
             <label for="author">Author:</label>
             <input type="text" name="author" id="author" required>
 
+            <!-- Page count input field (numeric only) -->
             <label for="pgnums">Total Pages:</label>
             <input type="number" name="pages" id="pages" required>
 
+            <!-- Read status checkbox -->
             <label for="read">Read?</label>
             <input type="checkbox" value="true" name="read" id="read">
 
+            <!-- Submit button to add the book -->
             <button class="submit" type="submit">Add Book</button>
+            <!-- Cancel button to close dialog without adding a book -->
             <button id="cancelAdd" onclick="" formnovalidate>Cancel</button>
         </form>
     </dialog>
 
+    <!-- JavaScript file link at the end for better page loading performance -->
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
