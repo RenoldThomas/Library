@@ -35,3 +35,6 @@ This web application creates a personal book library management system that enab
 
 ## Author
 Renold T (@renold)
+
+## Credits
+This project was created as part of The Odin Project curriculum (2021).
